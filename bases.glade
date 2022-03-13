@@ -14,13 +14,21 @@
       <row>
         <col id="0" translatable="yes">binary</col>
       </row>
+      <row>
+        <col id="0" translatable="yes">octal</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">hexadecimal</col>
+      </row>
     </data>
   </object>
   <object class="GtkWindow" id="window1">
     <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Bases</property>
+    <property name="resizable">False</property>
     <child>
       <object class="GtkFixed" id="fixed1">
-        <property name="width-request">416</property>
+        <property name="width-request">450</property>
         <property name="height-request">180</property>
         <property name="visible">True</property>
         <property name="can-focus">False</property>
@@ -34,20 +42,21 @@
             <property name="label" translatable="yes">result:</property>
           </object>
           <packing>
-            <property name="x">157</property>
-            <property name="y">104</property>
+            <property name="x">171</property>
+            <property name="y">101</property>
           </packing>
         </child>
         <child>
           <object class="GtkLabel" id="result">
-            <property name="width-request">178</property>
+            <property name="width-request">394</property>
             <property name="height-request">36</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
+            <property name="selectable">True</property>
           </object>
           <packing>
-            <property name="x">118</property>
-            <property name="y">134</property>
+            <property name="x">24</property>
+            <property name="y">131</property>
           </packing>
         </child>
         <child>
@@ -75,16 +84,16 @@
             <signal name="clicked" handler="btn1_clicked" swapped="no"/>
           </object>
           <packing>
-            <property name="x">162</property>
-            <property name="y">74</property>
+            <property name="x">176</property>
+            <property name="y">69</property>
           </packing>
         </child>
         <child>
           <object class="GtkComboBox" id="combo2">
             <property name="width-request">100</property>
-            <property name="height-request">30</property>
+            <property name="height-request">31</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
+            <property name="can-focus">True</property>
             <property name="model">dtypes</property>
             <property name="active">1</property>
             <child>
@@ -95,16 +104,16 @@
             </child>
           </object>
           <packing>
-            <property name="x">303</property>
+            <property name="x">326</property>
             <property name="y">31</property>
           </packing>
         </child>
         <child>
           <object class="GtkComboBox" id="combo1">
             <property name="width-request">97</property>
-            <property name="height-request">30</property>
+            <property name="height-request">31</property>
             <property name="visible">True</property>
-            <property name="can-focus">False</property>
+            <property name="can-focus">True</property>
             <property name="model">dtypes</property>
             <property name="active">0</property>
             <child>
@@ -115,7 +124,7 @@
             </child>
           </object>
           <packing>
-            <property name="x">189</property>
+            <property name="x">192</property>
             <property name="y">31</property>
           </packing>
         </child>
@@ -141,7 +150,7 @@
             <property name="label" translatable="yes">to</property>
           </object>
           <packing>
-            <property name="x">304</property>
+            <property name="x">331</property>
             <property name="y">6</property>
           </packing>
         </child>
@@ -154,8 +163,8 @@
             <property name="label" translatable="yes">from</property>
           </object>
           <packing>
-            <property name="x">188</property>
-            <property name="y">6</property>
+            <property name="x">200</property>
+            <property name="y">4</property>
           </packing>
         </child>
       </object>

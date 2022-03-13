@@ -20,7 +20,7 @@ combo2 = builder.get_object("combo2")
 #button click action
 def btn1_clicked(self):
     #convert and show result
-    result.set_text(convert(entry.get_text(),combo2.get_active(),combo1.get_active()))
+    result.set_text(convert(entry.get_text(),combo1.get_active(),combo2.get_active()))
     
 
 #set button1 onclick event
